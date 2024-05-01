@@ -28,6 +28,38 @@
   color: #61dafb;
 }
 
+.reactstrap5jumbotronclone {
+  background-color: darkblue;
+}
+
+.header-links {
+  justify-content: left;
+  color: #F0F0F0;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.header-bar {
+  background-color: darkblue;
+  height: 25px;
+}
+
+.site-logo {
+  width: 266px;
+  height: 120px;
+  padding: 10px
+}
+
+.tag-menu {
+  background-color: gray;
+}
+.main-view {
+  background-color:lightblue;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +68,5 @@
     transform: rotate(360deg);
   }
 }
+
+

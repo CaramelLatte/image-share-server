@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./components/HomeComponent"
+import Discord from "./components/DiscordComponent"
+import Posts from "./components/PostsComponent"
+import Tags from "./components/TagsComponent"
+import Upload from "./components/UploadComponent"
+import Error from "./components/ErrorComponent"
+import Header from "./components/HeaderComponent"
+import Footer from "./components/FooterComponent"
+import { Container } from 'reactstrap'
+import "./app.css";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <BrowserRouter>
+      <Header />
+          <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/discord" element={<Discord />}/>
+            <Route path="/tags" element={<Tags />}/>
+            <Route path="/posts" element={<Posts />}/>
+            <Route path="/upload" element={<Upload />}/>
+            <Route path="*" element={<Error />}/>
+          </Routes>
+        <Footer/>
+      </BrowserRouter>
+
     </div>
   );
 }
