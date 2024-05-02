@@ -16,6 +16,7 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  background-size: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,12 +25,28 @@
   color: white;
 }
 
+body {
+  min-height: 100vh;
+  background-image: Url("4024_background2.png");
+  background-size: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  background-image: Url("84587792_background_footer.png");
+  background-repeat: repeat-x;
+  min-height: 480px;
+  bottom: 0;
+  min-width: 100%;
+  position: absolute;
+}
+
 .App-link {
   color: #61dafb;
 }
 
 .reactstrap5jumbotronclone {
-  background-color: darkblue;
+  background-color: #29536D;
 }
 
 .header-links {
@@ -40,7 +57,7 @@
 }
 
 .header-bar {
-  background-color: darkblue;
+  background-color: #29536D;
   height: 25px;
 }
 
@@ -53,12 +70,6 @@
 .tag-menu {
   background-color: gray;
 }
-.main-view {
-  background-color:lightblue;
-  /* padding-left: 20px;
-  padding-right: 20px; */
-}
-
 
 @keyframes App-logo-spin {
   from {
@@ -69,4 +80,20 @@
   }
 }
 
+.gallery-image {
+  width: 50px;
+  height: 50px;
+}
+
+.gallery-image-col {
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.tag-box{
+  float: left;
+  color:white;
+}
 
