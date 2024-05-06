@@ -18,7 +18,7 @@ const Posts = () => {
 
     return (
 
-        <Container fluid className=''>
+        <Container fluid className='main-view'>
             <aside className="tag-box col-2">
                 Tag Element Here
                 <br /><br /><br /><br /><br />
@@ -54,7 +54,7 @@ const Posts = () => {
                         ))}
                 </Row>
             </Row>
-        
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>big page
         </Container>
     );
 };

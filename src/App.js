@@ -14,8 +14,9 @@ import "./app.css";
 
 function App() {
   return (
-    <div className="app main-view">
+    <div className="app">
       <BrowserRouter>
+            <div className="main-view">
       <Header />
           <Routes>
             <Route path="/" element={<Home />}/>
@@ -25,6 +26,7 @@ function App() {
             <Route path="/upload" element={<Upload />}/>
             <Route path="*" element={<Error />}/>
           </Routes>
+            </div>
         <Footer/>
       </BrowserRouter>
 

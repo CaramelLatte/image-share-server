@@ -25,21 +25,15 @@
   color: white;
 }
 
-body {
-  min-height: 100vh;
+html, body {
+  /* min-height: 100vh; */
+  /* height: 100%; */
   background-image: Url("4024_background2.png");
   background-size: 100vh;
   display: flex;
   flex-direction: column;
 }
-.footer {
-  background-image: Url("84587792_background_footer.png");
-  background-repeat: repeat-x;
-  min-height: 480px;
-  bottom: 0;
-  min-width: 100%;
-  position: absolute;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -71,18 +65,10 @@ body {
   background-color: gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .gallery-image {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .gallery-image-col {
@@ -98,5 +84,26 @@ body {
 }
 
 .main-view {
-  /* min-height: 1800px; */
+  min-height: calc(100vh - 238px);
+
 }
+
+.footer {
+  background-image: Url("84587792_background_footer.png");
+  background-repeat: repeat-x;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 238px;
+  /* position: absolute; */
+}
+
+/* @container main-view-container (max-height: 1px) {
+  .footer {
+    position: fixed;
+    background-image: Url("84587792_background_footer.png");
+    background-repeat: repeat-x;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 238px;
+  }
+} */
