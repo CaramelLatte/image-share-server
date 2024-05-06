@@ -13,6 +13,31 @@ const Posts = () => {
         'image1.png',
         'image2.png',
         'image3.png',
+        'image1.png',
+        'image2.png',
+        'image3.png',
+        'image1.png',
+        'image2.png',
+        'image3.png',
+        'image1.png',
+        'image2.png',
+        'image3.png',        'image1.png',
+        'image2.png',
+        'image3.png',
+        'image1.png',
+        'image2.png',
+        'image3.png',
+        'image1.png',
+        'image2.png',
+        'image3.png',        'image1.png',
+        'image2.png',
+        'image3.png',
+        'image1.png',
+        'image2.png',
+        'image3.png',
+        'image1.png',
+        'image2.png',
+        'image3.png',
         // Add more image file names here
     ];
 
@@ -27,7 +52,7 @@ const Posts = () => {
                 <Row className="">
 
                     {imageFileNames.map((fileName, index) => (
-                        <div className='col-1 gallery-image-col border border-black'>
+                        <div className='col-xs-4 col-sm-4 col-md-3 col-xl-2 gallery-image-col'>
                             <img
                                 key={index}
                                 src={require(`../../server//images/${fileName}`)} // Assuming images are in the "images" folder
@@ -37,24 +62,7 @@ const Posts = () => {
                         </div>
                     ))}
                 </Row>
-                <Row className=''>
-
-                    
-
-                        {imageFileNames.map((fileName, index) => (
-                            <div className='col-1 gallery-image-col border border-black'>
-                                <img
-                                    key={index}
-                                    src={require(`../../server//images/${fileName}`)} // Assuming images are in the "images" folder
-                                    alt={`Thumbnail ${index + 1}`}
-                                    className="thumbnail gallery-image"
-                                />
-                            </div>
-
-                        ))}
-                </Row>
             </Row>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>big page
         </Container>
     );
 };
