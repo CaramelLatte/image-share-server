@@ -25,7 +25,7 @@ function App() {
             <Route path="/upload" element={<Upload />}/>
             <Route path="*" element={<Error />}/>
           </Routes>
-        {/* <Footer/> */}
+        <Footer/>
       </BrowserRouter>
 
     </div>

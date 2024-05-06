@@ -52,7 +52,6 @@ const Posts = () => {
                             </div>
 
                         ))}
-                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 </Row>
             </Row>
         
