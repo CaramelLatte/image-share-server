@@ -26,9 +26,8 @@
 }
 
 html, body {
-  /* min-height: 100vh; */
-  /* height: 100%; */
-  background-image: Url("4024_background2.png");
+
+  background-image: Url("background.png");
   background-size: 100vh;
   display: flex;
   flex-direction: column;
@@ -89,7 +88,7 @@ html, body {
 }
 
 .footer {
-  background-image: Url("84587792_background_footer.png");
+  background-image: Url("footer.png");
   background-repeat: repeat-x;
   bottom: 0px;
   min-width: 100%;

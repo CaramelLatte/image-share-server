@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
-import ClamClub from '../clamclub_logo.png'
+import Logo from '../logo.png'
 // import axios from "axios";
 
 function Header() {
@@ -10,7 +10,7 @@ function Header() {
             <div className="">
             <div className="row">
                 <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src={ClamClub} className="site-logo"></img>
+                    <img src={Logo} className="site-logo"></img>
                 </div>
                 <div className="col header-bar">
                     <Link className="header-links" to="/"> Home </Link>

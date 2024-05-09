@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Container, Row } from 'reactstrap'
 
 const Posts = () => {
-    // Replace with your actual image file names or URLs
     const imageFileNames = [
         'image1.png',
         'image2.png',
@@ -38,7 +37,6 @@ const Posts = () => {
         'image1.png',
         'image2.png',
         'image3.png',
-        // Add more image file names here
     ];
 
     return (
@@ -55,7 +53,7 @@ const Posts = () => {
                         <div className='col-xs-4 col-sm-4 col-md-3 col-xl-2 gallery-image-col'>
                             <img
                                 key={index}
-                                src={require(`../../server//images/${fileName}`)} // Assuming images are in the "images" folder
+                                src={require(`../../server//images/${fileName}`)}
                                 alt={`Thumbnail ${index + 1}`}
                                 className="thumbnail gallery-image"
                             />
